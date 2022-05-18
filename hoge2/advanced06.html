@@ -1,0 +1,193 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新卒のためのネットワーク応用-6 &#8212; System-I 1.0.0 ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cloud.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+
+    
+    
+     
+        <script src="../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="新卒のためのネットワーク応用-7" href="advanced07.html" />
+    <link rel="prev" title="新卒のためのネットワーク応用-5" href="advanced05.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="advanced07.html" title="新卒のためのネットワーク応用-7"
+             accesskey="N">次へ</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="advanced05.html" title="新卒のためのネットワーク応用-5"
+             accesskey="P">前へ</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">System-I 1.0.0 ドキュメント</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href=""><strong>新卒のためのネットワーク応用-6</strong></a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1><strong>新卒のためのネットワーク応用-6</strong><a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="line-block">
+<div class="line">この講義もあくまで基礎であり、興味がある人は</div>
+<div class="line">自分自身で書籍やネットそのものから自学自習することを</div>
+<div class="line">推奨するものとします。</div>
+</div>
+<p><em>無線LANの認証について</em></p>
+<div class="line-block">
+<div class="line">無線LANには、いくつかの認証情報を実装出来ます。</div>
+</div>
+<div class="line-block">
+<div class="line">PSK</div>
+<div class="line">&quot;Pre-Shared Key&quot;と呼称されるもので、家庭や小規模企業等で</div>
+<div class="line">見受けられる方式です。事前に設定しておいた20～63文字から</div>
+<div class="line">なるパスフレーズ（事前共有鍵）を用いるものです。</div>
+<div class="line">このパスフレーズの合致を確認すると、PMK(Pairwise Master Key)を</div>
+<div class="line">第一段階として生成し、続いてPTK（Pairwise Transient Key）を</div>
+<div class="line">第二段階として生成することで、セキュリティの向上を</div>
+<div class="line">実現します。</div>
+</div>
+<div class="line-block">
+<div class="line">IEEE802.1x</div>
+<div class="line">特徴としてはWi-Fi APの中ではなく、認証をRADIUS</div>
+<div class="line">（Remote Authentication Dial In User Service）サーバで</div>
+<div class="line">実施することにあります。この認証の結果を受けて、</div>
+<div class="line">Wi-Fi APは通信を許可するかどうかを判断します。</div>
+</div>
+<div class="line-block">
+<div class="line">Web認証</div>
+<div class="line">Wi-Fi APに接続しようとした際、特定のWebサイトに転送し、</div>
+<div class="line">そこでパスワードやIDを入力させることで認証する</div>
+<div class="line">仕組みです。公衆Wi-Fi等で用いられる方式です。</div>
+<div class="line">最近では企業などが来訪者向けに用いたりもしています。</div>
+</div>
+<div class="line-block">
+<div class="line">参考資料</div>
+<div class="line">　<a class="reference external" href="https://it-trend.jp/wireless-lan-controller/article/271-0004">https://it-trend.jp/wireless-lan-controller/article/271-0004</a></div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="advanced05.html"
+                          title="Previous page">&larr; <strong>新卒のためのネットワーク応用-5</strong></a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="advanced07.html"
+                          title="Next page">&rarr; <strong>新卒のためのネットワーク応用-7</strong></a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/hoge2/advanced06.rst.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="advanced07.html" title="新卒のためのネットワーク応用-7"
+             >次へ</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="advanced05.html" title="新卒のためのネットワーク応用-5"
+             >前へ</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">System-I 1.0.0 ドキュメント</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href=""><strong>新卒のためのネットワーク応用-6</strong></a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, super-ueda.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>
