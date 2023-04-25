@@ -1,0 +1,28 @@
+.. System-I documentation master file, created by
+   sphinx-quickstart on Tue May 17 15:29:01 2022.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to System-I's Advanced documentation!
+================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   /hoge2/advanced01
+   /hoge2/advanced02
+   /hoge2/advanced03
+   /hoge2/advanced04
+   /hoge2/advanced05
+   /hoge2/advanced06
+   /hoge2/advanced07
+   /hoge2/advanced08
+
+
+Index and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
